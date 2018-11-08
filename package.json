@@ -1,0 +1,25 @@
+{
+  "name": "@candour/normalize",
+  "version": "1.0.0",
+  "main": "dist/index.js",
+  "author": "Domas Bitvinskas <domas.bitvinskas@me.com>",
+  "license": "MIT",
+  "homepage": "https://github.com/candourpro/normalize",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/candourpro/normalize.git"
+  },
+  "scripts": {
+    "build": "BABEL_ENV=production babel index.js -d dist && BABEL_ENV=production babel lib/ -d dist/lib"
+  },
+  "dependencies": {
+    "radium": "^0.25.0",
+    "react": "^16.6.1"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-minify": "^0.3.0"
+  }
+}
