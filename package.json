@@ -1,6 +1,6 @@
 {
   "name": "candour-normalize",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "main": "dist/index.js",
   "author": "Domas Bitvinskas <domas.bitvinskas@me.com>",
   "license": "MIT",
@@ -13,8 +13,10 @@
     "build": "BABEL_ENV=production babel index.js -d dist && BABEL_ENV=production babel lib/ -d dist/lib"
   },
   "dependencies": {
-    "radium": "^0.25.0",
-    "react": "^16.6.1"
+    "radium": "^0.25.0"
+  },
+  "peerDependencies": {
+    "react": ">=16"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
